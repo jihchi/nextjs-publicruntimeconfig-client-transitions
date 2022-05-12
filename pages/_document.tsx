@@ -1,6 +1,11 @@
+// import type { DocumentContext, DocumentInitialProps } from 'next/document';
 import { Html, Head, Main, NextScript } from 'next/document';
+// import NextDocument from 'next/document';
+// import getConfig from 'next/config';
 
-export default function Document() {
+// const { publicRuntimeConfig } = getConfig();
+
+function Document() {
   return (
     <Html>
       <Head>
@@ -22,3 +27,19 @@ export default function Document() {
     </Html>
   );
 }
+
+// Document.getInitialProps = async (context: DocumentContext) => {
+//   const originalRenderPage = context.renderPage;
+
+//   context.renderPage = () =>
+//     originalRenderPage({
+//       enhanceApp: (App) => App,
+//       enhanceComponent: (Component) => Component,
+//     });
+
+//   const initialProps = await NextDocument.getInitialProps(context);
+
+//   return initialProps;
+// }
+
+export default Document;
