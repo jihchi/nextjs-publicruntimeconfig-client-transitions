@@ -1,9 +1,9 @@
-import type { NextPage } from 'next'
-import * as React from 'react'
+import type { NextPage } from 'next';
+import * as React from 'react';
 import { useRouter } from 'next/router';
 
-const Push: NextPage = () => {
-  const [remaining, countdown] = React.useReducer(n => n - 1, 3);
+const Redirect: NextPage = () => {
+  const [remaining, countdown] = React.useReducer((n) => n - 1, 3);
   const router = useRouter();
   const dest = useDestQuery();
 
@@ -20,11 +20,12 @@ const Push: NextPage = () => {
   return (
     <main>
       <h1>
-        You&apos;ll be automatically redirected to `{dest}` in {remaining} second{remaining > 1 ? 's' : ''}.
+        You&apos;ll be automatically redirected to `{dest}` in {remaining}{' '}
+        second{remaining > 1 ? 's' : ''}.
       </h1>
     </main>
-  )
-}
+  );
+};
 
 function useDestQuery() {
   const { query } = useRouter();
@@ -35,4 +36,4 @@ function useDestQuery() {
   return dest ?? '/';
 }
 
-export default Push;
+export default Redirect;

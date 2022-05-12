@@ -1,5 +1,5 @@
-import * as React from 'react'
-import Link from 'next/link'
+import * as React from 'react';
+import Link from 'next/link';
 
 const Nav = () => {
   return (
@@ -14,13 +14,13 @@ const Nav = () => {
         <Link href="/Static">Navigate to /Static</Link>
       </li>
       <li>
-        <Link href="/push?dest=Server">Redirect to /Server</Link>
+        <Link href="/redirect?dest=Server">Redirect to /Server</Link>
       </li>
       <li>
-        <Link href="/push?dest=Static">Redirect to /Static</Link>
+        <Link href="/redirect?dest=Static">Redirect to /Static</Link>
       </li>
     </ul>
-  )
-}
+  );
+};
 
 export default Nav;
