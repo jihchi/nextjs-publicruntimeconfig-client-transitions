@@ -5,9 +5,10 @@ import Nav from '../components/Nav';
 const { publicRuntimeConfig } = getConfig();
 
 const GetStatisProps: NextPage<{ imageUrl: string }> = (props) => {
+  console.log('GetStatisProps', publicRuntimeConfig);
   return (
     <main>
-      <h1>Static Site Generation</h1>
+      <h1>Static HTML + JSON (uses getStaticProps)</h1>
       <h4>
         Direct from <code>publicRuntimeConfig</code>
       </h4>

@@ -5,9 +5,10 @@ import Nav from '../components/Nav';
 const { publicRuntimeConfig } = getConfig();
 
 const GetServerSideProps: NextPage<{ imageUrl: string }> = (props) => {
+  console.log('GetServerSideProps', publicRuntimeConfig);
   return (
     <main>
-      <h1>Server-side Rendering</h1>
+      <h1>Server-side renders at runtime (uses getServerSideProps)</h1>
       <h4>
         Direct from <code>publicRuntimeConfig</code>
       </h4>
