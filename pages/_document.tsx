@@ -14,7 +14,6 @@ export default function Document() {
           href="https://unpkg.com/sakura.css/css/sakura.css"
           type="text/css"
         />
-        <title>Demo</title>
       </Head>
       <body>
         <Main />
