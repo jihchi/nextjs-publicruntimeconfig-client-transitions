@@ -33,7 +33,7 @@ const Static: NextPage<{ now: number; imageUrl: string }> = (props) => {
 export const getStaticProps = () => {
   return {
     props: {
-      imageUrl: publicRuntimeConfig?.imageUrl ?? 'undefined',
+      imageUrl: publicRuntimeConfig?.imageUrl ?? 'n.a.',
       now: Date.now(),
     },
   };

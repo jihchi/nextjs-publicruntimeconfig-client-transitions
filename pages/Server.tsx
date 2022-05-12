@@ -33,7 +33,7 @@ const Server: NextPage<{ now: number; imageUrl: string }> = (props) => {
 export const getServerSideProps = () => {
   return {
     props: {
-      imageUrl: publicRuntimeConfig?.imageUrl ?? 'undefined',
+      imageUrl: publicRuntimeConfig?.imageUrl ?? 'n.a.',
       now: Date.now(),
     },
   };
