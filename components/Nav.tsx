@@ -5,19 +5,16 @@ const Nav = () => {
   return (
     <ul>
       <li>
-        <Link href="/">Navigate to /</Link>
+        <Link href="/">Home</Link>
       </li>
       <li>
-        <Link href="/Server">Navigate to /Server</Link>
+        <Link href="/GetServerSideProps">Go to /GetServerSideProps</Link>
       </li>
       <li>
-        <Link href="/Static">Navigate to /Static</Link>
+        <Link href="/GetInitialProps">Go to /GetInitialProps</Link>
       </li>
       <li>
-        <Link href="/redirect?dest=Server">Redirect to /Server</Link>
-      </li>
-      <li>
-        <Link href="/redirect?dest=Static">Redirect to /Static</Link>
+        <Link href="/GetStaticProps">Go to /GetStaticProps</Link>
       </li>
     </ul>
   );
